@@ -125,6 +125,7 @@ public class CharacterSelector : MonoBehaviour
         int newStat = Mathf.Clamp(int.Parse(attributes[atb].text) + 1, 0, 99);
 
         attributes[atb].text = newStat.ToString();
+        stats[selectedCharacter, atb] = newStat;
     }
 
     void DecreaseStat(int atb)
@@ -132,6 +133,7 @@ public class CharacterSelector : MonoBehaviour
         int newStat = Mathf.Clamp(int.Parse(attributes[atb].text) - 1, 0, 99);
 
         attributes[atb].text = newStat.ToString();
+        stats[selectedCharacter, atb] = newStat;
     }
 
     void OnCreateButtonClicked()
