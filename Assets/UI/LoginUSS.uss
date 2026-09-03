@@ -1,0 +1,26 @@
+:root {
+}
+
+.unity-base-text-field__input {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Slots_Arrows.png?fileID=4508516164457878799&guid=4d6d3e529a32a4141bbac8264745777d&type=3#Steampunk_UI_Slots_Arrows_9");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    font-size: 33px;
+    -unity-font-style: italic;
+    color: rgb(219, 193, 129);
+}
+
+.unity-button:active {
+    transition-timing-function: ease-out;
+    transition-duration: 0s;
+    transition-property: background-image;
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_2.png?fileID=-6513349321188212269&guid=f85c0b0d6e5acd64185eafcda5d6cba8&type=3#Steampunk_UI_Buttons_2_5");
+}
+
+.unity-button {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_2.png?fileID=6912372366057910295&guid=f85c0b0d6e5acd64185eafcda5d6cba8&type=3#Steampunk_UI_Buttons_2_4");
+    -unity-slice-left: 1;
+    -unity-slice-top: 1;
+    -unity-slice-right: 1;
+    -unity-slice-bottom: 1;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,43 @@
+:root {
+}
+
+.unity-button {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_3.png?fileID=3802430405387719474&guid=0bfe7a2d4a8de314bbf0f670d78a6cd2&type=3#Steampunk_UI_Alternative_Colors_3_1");
+    -unity-slice-left: 1;
+    -unity-slice-top: 1;
+    -unity-slice-right: 1;
+    -unity-slice-bottom: 1;
+    aspect-ratio: 1.2;
+}
+
+.unity-button:active {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_3.png?fileID=-3566595149302162515&guid=0bfe7a2d4a8de314bbf0f670d78a6cd2&type=3#Steampunk_UI_Alternative_Colors_3_2");
+    -unity-slice-left: 1;
+    -unity-slice-top: 1;
+    -unity-slice-right: 1;
+    -unity-slice-bottom: 1;
+    aspect-ratio: 1.2;
+}
+
+.unity-base-text-field__input {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_3.png?fileID=-1956750064360261586&guid=0bfe7a2d4a8de314bbf0f670d78a6cd2&type=3#Steampunk_UI_Alternative_Colors_3_8");
+    -unity-slice-left: 1;
+    -unity-slice-top: 1;
+    -unity-slice-right: 1;
+    -unity-slice-bottom: 1;
+}
+
+#BackGround > #MainPanel > #StatPanel > .unity-button {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_1.png?fileID=-6169793712705254692&guid=2dc12ad8908ff3047bb25165c5b3aee9&type=3#Steampunk_UI_Alternative_Colors_1_2");
+    aspect-ratio: 1.5;
+    width: 26%;
+    height: 9%;
+}
+
+#BackGround > #MainPanel > #StatPanel > .unity-button:active {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_1.png?fileID=1379336649267586762&guid=2dc12ad8908ff3047bb25165c5b3aee9&type=3#Steampunk_UI_Alternative_Colors_1_3");
+    aspect-ratio: 1.5;
+    width: 26%;
+    height: 9%;
+}

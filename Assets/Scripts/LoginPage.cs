@@ -5,18 +5,18 @@ public class LoginPage : MonoBehaviour
 {
     [SerializeField] UIDocument document;
     VisualElement root;
-    VisualElement mainPanel;
     TextField email;
     TextField password;
     Label emailError;
     Label passwordError;
     Button loginButton;
 
+    [SerializeField] VisualTreeAsset characterSelection;
+    CharacterSelector characterSelector;
+
     private void Awake()
     {
         root = document.rootVisualElement;
-
-        mainPanel = root.Q<VisualElement>("MainPanel");
 
         email = root.Q<TextField>("EmailTextField");
         password = root.Q<TextField>("PasswordTextField");
@@ -29,6 +29,8 @@ public class LoginPage : MonoBehaviour
 
         loginButton = root.Q<Button>("LoginButton");
         loginButton.clicked += OnButtonClicked;
+
+        characterSelector = GetComponent<CharacterSelector>();
     }
 
 
@@ -45,7 +47,8 @@ public class LoginPage : MonoBehaviour
 
         if (!string.IsNullOrEmpty(email.text) && !string.IsNullOrEmpty(password.text))
         {
-            mainPanel.style.display = DisplayStyle.None;
+            document.visualTreeAsset = characterSelection;
+            characterSelector.enabled = true;
         }
     
     }
