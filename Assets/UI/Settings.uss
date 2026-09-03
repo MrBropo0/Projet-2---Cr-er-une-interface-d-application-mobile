@@ -1,0 +1,39 @@
+:root {
+}
+
+
+
+.Panel {
+    background-image: url("project://database/Assets/spriteSheets/DarkRedUISheet.png?fileID=4142480713676401184&guid=b8cacefb8314b47efa966fddda512ade&type=3#buttomHovered3-Slice");
+    top: 25px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    width: 836px;
+    height: 144px;
+    -unity-font-definition: url("project://database/Assets/Fonts/R95-sans-serif-vga-8pt.ttf?fileID=12800000&guid=364a6bf7e8837d747b2fa900f583c3e2&type=3#R95-sans-serif-vga-8pt");
+    font-size: 44px;
+    -unity-slice-left: 1;
+    -unity-slice-top: 1;
+    -unity-slice-right: 1;
+    -unity-slice-bottom: 1;
+}
+
+.Panel:hover {
+    background-image: url("project://database/Assets/spriteSheets/DarkRedUISheet.png?fileID=-1214794717364253743&guid=b8cacefb8314b47efa966fddda512ade&type=3#buttonNormal3-Slice");
+    top: 25px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    width: 836px;
+    height: 144px;
+    -unity-font-definition: url("project://database/Assets/Fonts/R95-sans-serif-vga-8pt.ttf?fileID=12800000&guid=364a6bf7e8837d747b2fa900f583c3e2&type=3#R95-sans-serif-vga-8pt");
+    font-size: 44px;
+    -unity-slice-left: 1;
+    -unity-slice-top: 1;
+    -unity-slice-right: 1;
+    -unity-slice-bottom: 1;
+    transition-timing-function: ease;
+}
