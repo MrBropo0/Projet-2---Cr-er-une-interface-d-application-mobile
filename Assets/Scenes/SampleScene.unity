@@ -497,7 +497,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049229018}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db8b14235b4213b49aee066afa436fb7, type: 3}
   m_Name: 
@@ -539,6 +539,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Settings
   document: {fileID: 2049229019}
+  camText:
+  - Easy
+  - Normal
+  - Hard
+  hudText:
+  - Smaller
+  - Normal
+  - Bigger
+  msgText:
+  - Transparent
+  - Normal
+  - Opaque
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
