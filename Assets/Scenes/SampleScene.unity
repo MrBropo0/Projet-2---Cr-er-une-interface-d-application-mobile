@@ -444,6 +444,7 @@ GameObject:
   - component: {fileID: 2049229019}
   - component: {fileID: 2049229021}
   - component: {fileID: 2049229022}
+  - component: {fileID: 2049229023}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -525,6 +526,19 @@ MonoBehaviour:
   - Guts
   - Thorfinn
   - Musashi
+--- !u!114 &2049229023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049229018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ffe4b72738f964998785ed29d99f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Settings
+  document: {fileID: 2049229019}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

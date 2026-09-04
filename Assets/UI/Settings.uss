@@ -1,8 +1,6 @@
 :root {
 }
 
-
-
 .Panel {
     background-image: url("project://database/Assets/spriteSheets/DarkRedUISheet.png?fileID=4142480713676401184&guid=b8cacefb8314b47efa966fddda512ade&type=3#buttomHovered3-Slice");
     top: 25px;
@@ -36,4 +34,105 @@
     -unity-slice-right: 1;
     -unity-slice-bottom: 1;
     transition-timing-function: ease;
+}
+
+.Panel_Button {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    width: 36%;
+    height: 35%;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0);
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-image: url("project://database/Assets/spriteSheets/DarkRedUISheet.png?fileID=-2716300832906171234&guid=b8cacefb8314b47efa966fddda512ade&type=3#scrollbarLight");
+    -unity-background-image-tint-color: rgb(200, 200, 200);
+    -unity-font-definition: url("project://database/Assets/Fonts/R95-sans-serif-vga-8pt.ttf?fileID=12800000&guid=364a6bf7e8837d747b2fa900f583c3e2&type=3#R95-sans-serif-vga-8pt");
+    font-size: 44px;
+    -unity-slice-left: 0;
+    -unity-slice-right: 0;
+    -unity-slice-scale: 3px;
+}
+
+.Panel_Button_Selected {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    width: 36%;
+    height: 35%;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    background-color: rgba(130, 31, 56, 0);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    background-image: url("project://database/Assets/spriteSheets/DarkRedUISheet.png?fileID=-8800166060334575895&guid=b8cacefb8314b47efa966fddda512ade&type=3#scrollbarDark");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    -unity-font-definition: url("project://database/Assets/Fonts/R95-sans-serif-vga-8pt.ttf?fileID=12800000&guid=364a6bf7e8837d747b2fa900f583c3e2&type=3#R95-sans-serif-vga-8pt");
+    font-size: 44px;
+    -unity-slice-left: 0;
+    -unity-slice-right: 0;
+    -unity-slice-scale: 3px;
+}
+
+.Switch {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgb(88, 19, 36);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    font-size: 37px;
+}
+
+.Switch:checked {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgb(166, 49, 78);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+.DifficultyButton {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/spriteSheets/DarkRedUISheet.png?fileID=6099498914738102850&guid=b8cacefb8314b47efa966fddda512ade&type=3#buttonPressed9-Slice");
+    -unity-font-style: bold;
+}
+
+.DifficultyButton:active {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/spriteSheets/BrownFantasyUISheet.png?fileID=6099498914738102850&guid=ac6f3997a2c4543b3926b7ecf9d30776&type=3#buttonPressed9-Slice");
+    -unity-font-style: bold;
+}
+
+.unity-label {
+    -unity-font-definition: url("project://database/Assets/Fonts/R95-sans-serif-vga-8pt.ttf?fileID=12800000&guid=364a6bf7e8837d747b2fa900f583c3e2&type=3#R95-sans-serif-vga-8pt");
+    font-size: 32px;
+    -unity-text-align: middle-left;
+}
+
+
+
+.unity-scroller {
+    visibility: hidden;
+    display: none;
+    overflow: hidden;
 }

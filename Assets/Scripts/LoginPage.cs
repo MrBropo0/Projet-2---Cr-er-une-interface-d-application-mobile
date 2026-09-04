@@ -14,7 +14,7 @@ public class LoginPage : MonoBehaviour
     [SerializeField] VisualTreeAsset characterSelection;
     CharacterSelector characterSelector;
 
-    private void Awake()
+    private void OnEnable()
     {
         root = document.rootVisualElement;
 
