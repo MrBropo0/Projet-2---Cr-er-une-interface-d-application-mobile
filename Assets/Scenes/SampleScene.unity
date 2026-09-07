@@ -466,7 +466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
   m_PanelSettings: {fileID: 11400000, guid: c06dfd90fa523ed46b5b8176f3f343fc, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: d9b6f9fe43e37ec4eaa497699b02ae01, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: e0888e0127091d84cbccc242c5443696, type: 3}
   m_SortingOrder: 0
   m_Position: 0
   m_WorldSpaceSizeMode: 1
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049229018}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db8b14235b4213b49aee066afa436fb7, type: 3}
   m_Name: 
@@ -526,6 +526,7 @@ MonoBehaviour:
   - Guts
   - Thorfinn
   - Musashi
+  settingsPage: {fileID: 9197481963319205126, guid: d9b6f9fe43e37ec4eaa497699b02ae01, type: 3}
 --- !u!114 &2049229023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,7 +534,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049229018}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8ffe4b72738f964998785ed29d99f69, type: 3}
   m_Name: 

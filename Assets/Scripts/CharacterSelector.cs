@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -26,12 +25,16 @@ public class CharacterSelector : MonoBehaviour
 
     Button createButton;
 
+    [SerializeField] VisualTreeAsset settingsPage;
+    Settings settings;
+
 
     private void OnEnable()
     {
         document = GetComponent<UIDocument>();
         root = document.rootVisualElement;
         mainPanel = root.Q<VisualElement>("MainPanel");
+        settings = GetComponent<Settings>();
 
         spritePos = root.Q<VisualElement>("SpritePos");
         spritePos.style.backgroundImage = new StyleBackground(sprites[0]);
@@ -42,7 +45,6 @@ public class CharacterSelector : MonoBehaviour
         }
 
         chName = root.Q<Label>("CharacterName");
-        Debug.Log(chName == null ? "NON trouvé !" : "trouvé : " + chName.name);
 
         chName.text = characterName[0];
 
@@ -55,7 +57,7 @@ public class CharacterSelector : MonoBehaviour
         for (int i = 0; i < 6; i++)
         {
             increaseStatButton[i] = root.Q<Button>($"Increase{i}");
-
+            // Je ne peux pas mettre simplement i ici, le parametre recupere une "référence vivante" et pas simplement sa valeur à l'instant T. je dois donc passer par une variable temporaire
             int statIndex = i;
             increaseStatButton[i].clicked += () => IncreaseStat(statIndex);
         }
@@ -74,7 +76,7 @@ public class CharacterSelector : MonoBehaviour
         {
             for (int j = 0; j < 6 ; j++)
             {
-                stats[i, j] = UnityEngine.Random.Range(0, 99);
+                stats[i, j] = Random.Range(0, 99);
             }
         }
 
@@ -139,5 +141,8 @@ public class CharacterSelector : MonoBehaviour
     void OnCreateButtonClicked()
     {
         mainPanel.style.display = DisplayStyle.None;
+
+        document.visualTreeAsset = settingsPage;
+        settings.enabled = true;
     }
 }

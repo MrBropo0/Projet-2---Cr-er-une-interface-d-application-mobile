@@ -24,7 +24,7 @@ public class Settings : MonoBehaviour
     [SerializeField] List<string> msgText = new List<string>();
     int msgTextIndex = 1;
 
-    private void Awake()
+    private void OnEnable()
     {
         document = GetComponent<UIDocument>();
         root = document.rootVisualElement;
